@@ -249,6 +249,75 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 	content: '\25BE';
 	font-size: 18px;
 }
+.appbtn{
+	display: flex;
+}
+.appbtn a{
+    margin: 0 10px;
+}
+.appstore{
+	background: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+    color: #fff;
+    border-radius: 2rem;
+    padding: 10px 35px;
+    box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 25%), -5px -5px 10px 0 rgb(255 255 255 / 30%);
+    width: 220px;
+    text-align: center;
+}
+.appstore:hover{
+	box-shadow: inset 6px 6px 6px 0 rgb(0 0 0 / 25%), inset -6px -6px 6px 0 rgb(255 255 255 / 30%);
+}
+.appstore span{
+	display: block;
+}
+.appstore span:nth-child(1){
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.appstore span:nth-child(2){
+	font-size: 16px;
+}
+
+.playstore{
+	background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+	color: #fff;
+    border-radius: 2rem;
+    padding: 10px 35px;
+    box-shadow: 5px 5px 10px 0 rgb(0 0 0 / 25%), -5px -5px 10px 0 rgb(255 255 255 / 30%);
+    width: 220px;
+    text-align: center;
+}
+.playstore:hover{
+	box-shadow: inset 6px 6px 6px 0 rgb(0 0 0 / 25%), inset -6px -6px 6px 0 rgb(255 255 255 / 30%);
+}
+.playstore span{
+	display: block;
+}
+.playstore span:nth-child(1){
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.playstore span:nth-child(2){
+	font-size: 16px;
+}
+.Appbtn_sec_bg{
+	background: linear-gradient(to right, #ACB6E5, #74ebd5);
+	transform: skew(0deg, -5deg) translateY(-120px);
+	padding: 20px 0;
+	margin-top: 11rem;
+}
+.Cont{
+	transform: skew(0deg, 5deg);
+}
+.txt_mt{
+	margin-top: 13rem;
+}
+.txt_mt h2{
+	margin-bottom: 2rem;
+}
+.txt_mt p{
+	margin-bottom: 1.5rem;
+}
 /*Mobile View*/
 
 @media(max-width: 767px){
@@ -366,6 +435,23 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 	.step_wrap{
 		margin-top: 5rem;
 	}
+	.txt_mt{
+		margin-top: 3rem !important;
+	}
+	.Appbtn_sec_bg{
+		transform: skew(0deg, -10deg) translateY(-120px);
+	}
+	.Cont {
+    	transform: skew(0deg, 10deg);
+    	height: 700px;
+	}
+	.appbtn{
+		display: unset !important;
+	}
+	.appstore, .playstore{
+		text-align: center;
+		width: unset !important;
+	}
 }
 
 /*Tablet View*/
@@ -396,6 +482,19 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 	}
 	.steps_pad img{
 		width: 100%
+	}
+	.txt_mt {
+    	margin-top: 3rem;
+	}
+	.appbtn{
+		display: unset !important;
+	}
+	.appstore, .playstore{
+		text-align: center;
+		width: unset !important;
+	}
+	.Mockup{
+		margin-top: 2rem;
 	}
 }
 
