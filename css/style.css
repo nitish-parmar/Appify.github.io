@@ -6,6 +6,9 @@
 	text-decoration: none !important;
 	list-style-type: none;
 }
+html{
+	scroll-behavior: smooth;
+}
 header{
 	position: relative;
 	width: 100vw;
@@ -26,6 +29,10 @@ header{
 }
 .clearfix{
 	clear: both;
+}
+.sticky{
+	position: fixed;
+    z-index: 2;
 }
 nav{
 	float: right;
@@ -73,7 +80,7 @@ nav ul li:hover ul li{
 position: relative;
 background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+top: 3rem;
 }
 .boxshadow h3{
 	position: absolute;
@@ -133,7 +140,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 .feature h2{
 	font-weight: 600;
     color: #3b3b77;
-    margin-top: -19rem;
+    margin-top: -18rem;
 }
 /*.feature h2:after{
 	content: '';
@@ -265,7 +272,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
     text-align: center;
 }
 .appstore:hover{
-	box-shadow: inset 6px 6px 6px 0 rgb(0 0 0 / 25%), inset -6px -6px 6px 0 rgb(255 255 255 / 30%);
+	box-shadow: inset 3px 4px 5px 0 rgb(0 0 0 / 25%), inset -3px -4px 5px 0 rgb(255 255 255 / 30%);
 }
 .appstore span{
 	display: block;
@@ -288,7 +295,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
     text-align: center;
 }
 .playstore:hover{
-	box-shadow: inset 6px 6px 6px 0 rgb(0 0 0 / 25%), inset -6px -6px 6px 0 rgb(255 255 255 / 30%);
+	box-shadow: inset 3px 4px 5px 0 rgb(0 0 0 / 25%), inset -3px -4px 5px 0 rgb(255 255 255 / 30%);
 }
 .playstore span{
 	display: block;
@@ -318,7 +325,81 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 .txt_mt p{
 	margin-bottom: 1.5rem;
 }
-/*Mobile View*/
+footer {
+    background: lavender;
+    width: 100%;
+    float: left;
+    padding: 50px 0px;
+    text-align: center;
+}
+footer .footer-links {
+    margin: 20px 0px;
+    padding: 0px;
+}
+footer .footer-links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+footer .footer-links li a {
+    color: #000;
+}
+.footer-social-links {
+    padding: 0px;
+}
+.footer-social-links li {
+    display: inline-block;
+    margin: 0px 3px;
+    width: 35px;
+    height: 35px;
+    background: #121a26;
+    border-radius: 5px;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.footer-social-links li a {
+    color: #fff;
+    line-height: 35px;
+}
+.footer-social-links .fb:hover {
+    background: #395693;
+}
+.footer-social-links .twitter:hover {
+    background: #1DA1F2;
+}
+.footer-social-links .insta:hover {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.footer-social-links .l_in:hover {
+    background: #0077b5;
+}
+.footer-social-links .youtube:hover {
+    background: #FF0000;
+}
+footer .footer-links li a:hover {
+    text-decoration: none;
+    color: #6868e8;
+}
+.footerlogo{
+	color: #6868e8;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+}
+.copyright {
+    background: #6868e8;
+    float: left;
+    width: 100%;
+    color: #fff;
+    padding: 15px 0px;
+}
+.copyright p {
+    color: #fff;
+    margin: 0px;
+}
+/*---------------------------Mobile View------------------------------*/
 
 @media(max-width: 767px){
 	.logo{
@@ -328,17 +409,17 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 		width: 45px;
 		height: 44px;
 		margin: 10px;
-		background: #6868e8;
-		color: #fff;
+		/*background: #6868e8;*/
+		color: #6868e8;
 		float: right;
 		cursor: pointer;
 		text-align: center;
 		font-size: 30px;
-		box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 25%), inset -5px -5px 10px 0 rgb(255 255 255 / 30%);
+		/*box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 25%), inset -5px -5px 10px 0 rgb(255 255 255 / 30%);*/
 	}
-	.menu-toggle:hover{
+	/*.menu-toggle:hover{
 		box-shadow: inset 5px 5px 10px 0 rgb(0 0 0 / 25%), inset -5px -5px 10px 0 rgb(255 255 255 / 30%);
-	}
+	}*/
 	.menu-toggle:before{
 		content: '\f0c9';
 		font-family: fontAwesome;
@@ -360,6 +441,7 @@ background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, F
 	nav.active {
 		display: block !important;
 		width: 100%;
+		margin-bottom: 0.5rem;
 	}
 	nav.active ul .collapse_2{
 		display: none !important;
