@@ -8,36 +8,34 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-	<header class="container-fluid">
+	<header class="container-fluid sticky">
 		<a href="#" class="logo">Appify</a>
 		<div class="menu-toggle"></div>
 		<nav>
 			<ul>
-				<li><a href="#" class="active">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a class="collapse_1" href="#">Work</a>
+				<li><a href="#Home" class="active">Home</a></li>
+				<li><a href="#Features">Features</a></li>
+				<li><a class="collapse_1" href="#Steps">Steps</a>
 					<ul class="collapse_2">
-						<li><a href="#">Work 1</a></li>
-						<li><a href="#">Work 2</a></li>
-						<li><a href="#">Work 3</a></li>
-						<li><a href="#">Work 4</a></li>
+						<li><a href="#">Step 1</a></li>
+						<li><a href="#">Step 2</a></li>
+						<li><a href="#">Step 3</a></li>
 					</ul></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Testimonials</a></li>
-					<li><a href="#">Contact</a></li>
+				<li><a href="#Download">Download Appify</a></li>
 				</ul>
 			</nav>
 			<div class="clearfix"></div>
 		</header>
-		<section>
+		<section id="Home">
 			<div class="container-fluid">
 				<div class="row Background">
 					<!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<div class="boxshadow"><h3>Glassmorphism</h3></div>
 					</div> -->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-right" data-aos-duration="1000">
 						<div class="txt">
 							<h1>Showcase Your App With Appify</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -47,7 +45,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mocimg">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mocimg" data-aos="fade-left" data-aos-duration="1500">
 						<img class="Mockup" src="img/Mockup.png">
 					</div>
 
@@ -57,13 +55,13 @@
 			</div>
 		</section>
 
-		<section class="feature">
+		<section id="Features" class="feature">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,181.3C384,181,480,235,576,224C672,213,768,139,864,101.3C960,64,1056,64,1152,80C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 			<h2 class="text-center">Awesome Features</h2>
 			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor incididunt ut labore.</p>
 			<div class="container">
 				<div class="row fea_para mt-5 mb-5 pb-5">
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 " data-aos="fade-right" data-aos-duration="1200">
 						<div class="f_card">
 							<div class="f_icon text-center">
 								<i class="fa fa-rocket"></i>
@@ -72,7 +70,7 @@
 							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 						</div>		
 					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 " data-aos="zoom-in" data-aos-duration="1200">
 						<div class="f_card">
 							<div class="f_icon text-center">
 								<i class="fa fa-paint-brush"></i>
@@ -81,7 +79,7 @@
 							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt" data-aos="fade-left" data-aos-duration="1200">
 						<div class="f_card">
 							<div class="f_icon text-center">
 								<i class="fa fa-trophy"></i>
@@ -94,18 +92,18 @@
 			</div>
 		</section>
 
-		<section class="container mb-5">
-			<h2 class="text-center mt-5">All in 3 Easy Steps</h2>
+		<section id="Steps" class="container">
+			<h2 class="text-center pt-5">All in 3 Easy Steps</h2>
 			<p class="text-center watch_mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			<div class="step_wrapper">
 				<span class="step_no">1</span>
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Steps steps_pad">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Steps steps_pad" data-aos="fade-right" data-aos-duration="1200">
 						<h3>Multi and single page support</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<a href="#">Explore</a>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 steps_pad">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 steps_pad" data-aos="fade-left" data-aos-duration="1200">
 						<img src="img/app_img1.png">
 					</div>
 				</div>
@@ -113,10 +111,10 @@
 			<div class="step_wrapper">
 				<span class="step_no">2</span>
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 steps_pad">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 steps_pad" data-aos="fade-right" data-aos-duration="1200">
 						<img src="img/app_img2.png">
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Steps steps_pad">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Steps steps_pad" data-aos="fade-left" data-aos-duration="1200">
 						<h3>Photoshop mock-ups included free!</h3>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<a href="#">Explore</a>						
@@ -126,21 +124,21 @@
 			<div class="step_wrap">
 				<span class="step_no">3</span>
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Steps steps_pad">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 Steps steps_pad" data-aos="fade-right" data-aos-duration="1200">
 						<h3>Designed for modern apps</h3>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<a href="#">Explore</a>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 steps_pad">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 steps_pad" data-aos="fade-left" data-aos-duration="1200">
 						<img src="img/app_img3.png">
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="Appbtn_sec_bg">
+		<section id="Download" class="Appbtn_sec_bg">
 			<div class="container">
 				<div class="row Cont">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_mt">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 txt_mt" data-aos="fade-right" data-aos-duration="1200">
 						<h2>Available on iOS and Android</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<div class="appbtn">
@@ -158,15 +156,46 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-left" data-aos-duration="1200">
 						<img class="Mockup" src="img/Mockup1.png">
 					</div>
 				</div>	
 			</div>			
 		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12 overflow">
+						<p class="footerlogo" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="250">Appify</p>
+						<ul class="footer-links" data-aos="fade-up" data-aos-duration="1000">
+							<li><a href="#">Home</a></li>
+							<li><a href="about.php">Features</a></li>
+							<li><a href="#">Steps</a></li>
+							<li><a href="gallery.php">Download Appify</a></li>
+						</ul>
+						<ul class="footer-social-links" data-aos="fade-up" data-aos-duration="1700">
+							<li class="fb"><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li class="twitter"><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li class="insta"><a href=""><i class="fa fa-instagram"></i></a></li>
+							<li class="l_in"><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li class="youtube"><a href=""><i class="fa fa-youtube-play"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="copyright">
+			<div class="container">
+				<p class="text-center">© 2021 Copyright Appify. All Right Reserved.</p>
+			</div>
+		</div>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 		<script>
 			$(document).ready(function(){
 				$('.menu-toggle').click(function(){
